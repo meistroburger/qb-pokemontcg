@@ -89,7 +89,7 @@ AddEventHandler("Cards:Client:OpenCards", function()
           AttachEntityToEntity(propbox, PlayerPedId(), GetPedBoneIndex(PlayerPedId(), 0xDEAD), 0.1, 0.1, 0.0, 0.0, 10.0, 90.0, false, false, false, false, 2, true)
         Citizen.Wait(5)
         TriggerServerEvent("InteractSound_SV:PlayOnSource", "boxopen", 0.8)
-    QBCore.Functions.Progressbar("drink_something", "opening box..", 9500, false, true, {
+    QBCore.Functions.Progressbar("drink_something", "Opening Box..", 9500, false, true, {
         disableMovement = false,
         disableCarMovement = false,
         disableMouse = false,
@@ -112,7 +112,7 @@ AddEventHandler("Cards:Client:OpenPack", function()
           local PedCoords = GetEntityCoords(PlayerPedId())
           propcards = CreateObject(GetHashKey('prop_boosterpack_01'),PedCoords.x, PedCoords.y,PedCoords.z, true, true, true)
           AttachEntityToEntity(propcards, PlayerPedId(), GetPedBoneIndex(PlayerPedId(), 0xDEAD), 0.1, 0.1, 0.0, 70.0, 10.0, 90.0, false, false, false, false, 2, true)
-    QBCore.Functions.Progressbar("drink_something", "opening pack..", 3000, false, true, {
+    QBCore.Functions.Progressbar("drink_something", "Opening Box..", 3000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
         disableMouse = false,
@@ -164,7 +164,7 @@ AddEventHandler("Cards:client:UseBox", function()
     deckbox = CreateObject(GetHashKey('prop_deckbox_01'),PedCoords.x, PedCoords.y,PedCoords.z, true, true, true)
     AttachEntityToEntity(deckbox, PlayerPedId(), GetPedBoneIndex(PlayerPedId(), 0xDEAD), 0.1, 0.1, 0.0, 0.0, 10.0, 90.0, false, false, false, false, 2, true)
     QBCore.Functions.Notify("Box is being opened...", "error")
-    QBCore.Functions.Progressbar("use_bag", "Box is being opened", 5000, false, true, {
+    QBCore.Functions.Progressbar("use_bag", "Box has been opened", 5000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
         disableMouse = false,
